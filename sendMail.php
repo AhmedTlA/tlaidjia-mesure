@@ -123,7 +123,7 @@ if (isset($_POST['send'])) {
     // Set the SMTP server details
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
-    $mail->Port = 587;
+    $mail->Port = 465;
     //$mail->addAttachment($_FILES['image']['tmp_name'], $_FILES['image']['name']);
     $mail->SMTPSecure = 'tls';
     $mail->SMTPAuth = true;
